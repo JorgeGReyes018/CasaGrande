@@ -35,12 +35,7 @@ a {
     max-height: 22px;
 }
 /* Showcase Section */
-.showcase {
-    background-color: black;
-    color: white;
-    width: 100%;
-    min-height: 300px;
-}
+
 .right {
     margin: auto;
     padding-bottom: 40px;
@@ -55,29 +50,61 @@ a {
     padding-right: 20px;
     text-align: center;
 }
+/* Carousel Section */
+.carousel-inner {
+    max-width: 1600px;
+    max-height: 700px;
+    margin: auto;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 8%;
+}
 /* Companies Section */
+.introduction {
+    margin: 40px auto;
+}
+.introduction h2{
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    padding: 20px 0;
+    border-top:1px solid rgb(20, 20, 20);
+    border-bottom:1px solid rgb(20, 20, 20);
+
+}
 .companies {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 90%;
     margin: 20px auto;
     display: flex;
-    justify-content: space-around;
-    border: 1px solid black;
-    padding: 30px;
+    flex-direction: column;
 }
-.companies img {
+.logos {
+    width: 100%;
+    display: flex;
+}
+.logos img {
     max-height: 160px;
+    justify-content: space-between;
+    padding: 30px;
+    margin: auto;
 }
 /* Products Section */
 .products {
+    background-color: white;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .product {
-    max-width: 500px;
+    max-width: 260px;
+    margin: 30px;
+}
+.productName {
+    text-align: center;
 }
 .productIMG {
-    max-width: 400px;
+    max-width: 260px;
 }

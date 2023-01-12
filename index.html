@@ -19,18 +19,43 @@
 
 <body>
     <header class="navigation flexor">
-        <img class="logo" src="images/Logo.jpg" alt="">
+        <img class="logo" src="images/Logo.jpg" alt="Casa Grande Logo">
         <nav class="links">
             <ul>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="https://www.instagram.com/lacasagrandega/?hl=en" target="_blank"><img class="insta"
-                            src="images/insta.png" alt=""></a></li>
+                            src="images/instalogo.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
-    <section class="showcase flexor">
+    <!--  -->
+    <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4500">
+                <img src="images/caballoNegro.png" class="d-block w-100" alt="Caballo Negro Promotional Image">
+            </div>
+            <div class="carousel-item" data-bs-interval="4500">
+                <img src="images/nanePromo.png" class="d-block w-100" alt="Nane Promotional Image">
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--  -->
+    <!-- <section class="showcase flexor">
         <div class="left"><img src="images/energy.jpg" alt=""></div>
         <div class="right">
             <div class="heading">
@@ -39,13 +64,21 @@
                 <h1>"CABALLO NEGRO"</h1>
             </div>
         </div>
-    </section>
-    <div class="companies"><img src="images/Avelina.png" alt="">
-        <img src="images/efrutti.png" alt="">
-        <img src="images/kidsmania.png" alt="">
-        <img src="images/samai.png" alt="">
-        <img src="images/Molienda.png" alt="">
+    </section> -->
+    <div class="companies">
+        <div class="introduction">
+            <h2>We are a distributor for a variety of brands and products as listed below!</h2>
+        </div>
+        <div class="logos">
+            <img src="images/Avelina.png" alt="Avelina Logo">
+            <img src="images/nane.png" alt="Nane Logo">
+            <img src="images/kidsmania.png" alt="Kids Mania Logo">
+            <img src="images/efrutti.png" alt="EFrutti Logo">
+            <img src="images/samai.png" alt="Samai Logo">
+            <img src="images/Molienda.png" alt="La Molienda Logo">
+        </div>
     </div>
+    <div class=""></div>
     <div class="container products">
         <div class="product">
             <h1 class="productName">item name</h1>
@@ -76,7 +109,12 @@
             <img class="productIMG" src="images/SaMai.jpg" alt="">
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 <!--  -->
