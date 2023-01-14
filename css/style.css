@@ -1,110 +1,157 @@
 * {
-    font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 body {
-    background-color: white;
+  background-color: white;
 }
 .flexor {
-    display: flex;
+  display: flex;
 }
 /* Header Section */
 .navigation {
-    background-color: white;
-    justify-content: space-between;
+  background-color: white;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .logo {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 .links {
-    margin:auto 40px;
+  margin: auto 40px;
 }
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 .links ul li {
-    display: inline;
-    margin: auto 20px;
+  display: inline;
+  margin: auto 20px;
 }
 a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 .insta {
-    max-height: 22px;
+  max-height: 22px;
 }
 /* Showcase Section */
 
 .right {
-    margin: auto;
-    padding-bottom: 40px;
+  margin: auto;
+  padding-bottom: 40px;
 }
 .right h1 {
-    font-size: 5rem;
-    font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+  font-family: "Bebas Neue", cursive;
 }
 .heading {
-    width: 100%;
-    margin: auto;
-    padding-right: 20px;
-    text-align: center;
+  width: 100%;
+  margin: auto;
+  padding-right: 20px;
+  text-align: center;
 }
 /* Carousel Section */
 .carousel-inner {
-    max-width: 1600px;
-    max-height: 700px;
-    margin: auto;
+  max-width: 1600px;
+  max-height: 700px;
+  margin: auto;
 }
-.carousel-control-next, .carousel-control-prev {
-    width: 8%;
+.carousel-control-next,
+.carousel-control-prev {
+  width: 8%;
 }
 /* Companies Section */
 .introduction {
-    margin: 40px auto;
+  margin: 40px auto;
 }
-.introduction h2{
-    text-align: center;
-    font-size: 2.6rem;
-    font-family: 'Bebas Neue', cursive;
-    color: black;
-    padding: 20px 0;
-    border-top:1px solid rgb(20, 20, 20);
-    border-bottom:1px solid rgb(20, 20, 20);
-
+.introduction h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-family: "Bebas Neue", cursive;
+  color: black;
+  padding: 20px 0;
+  border-top: 1px solid rgb(20, 20, 20);
+  border-bottom: 1px solid rgb(20, 20, 20);
 }
 .companies {
-    background-color: rgb(255, 255, 255);
-    width: 90%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
 }
 .logos {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 .logos img {
-    max-height: 160px;
-    justify-content: space-between;
-    padding: 30px;
-    margin: auto;
+  max-height: 160px;
+  justify-content: space-between;
+  padding: 30px;
+  margin: auto;
 }
 /* Products Section */
 .products {
-    background-color: white;
-    margin-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  background-color: white;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .product {
-    max-width: 260px;
-    margin: 30px;
+  max-width: 260px;
+  margin: 30px;
 }
 .productName {
-    text-align: center;
+  text-align: center;
 }
 .productIMG {
-    max-width: 260px;
+  max-width: 260px;
+}
+
+/* Contact.html Styles */
+.contactBody {
+  background-color: rgb(200, 200, 200);
+}
+
+.contactUs {
+  margin: 30px auto;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contactHeading {
+  width: 60%;
+  margin: auto;
+  padding-top: 60px;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.contactForm {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.contactInputs {
+  flex-wrap: wrap;
+}
+.contactForm input {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.contactForm textarea {
+  margin-bottom: 40px;
+}
+
+.contactDetails h2 {
+  font-size: 1.2rem;
+  margin: 20px auto 40px;
 }
