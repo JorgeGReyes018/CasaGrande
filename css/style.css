@@ -118,6 +118,7 @@ a {
 
 .contactUs {
   margin: 30px auto;
+  padding: 0;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -131,26 +132,52 @@ a {
   font-size: 2.4rem;
   text-align: center;
 }
-
+.box {
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 10px;
+  margin: 20px 60px;
+  padding: 50px 18px;
+  margin-top: 60px;
+}
 .contactForm {
   width: 60%;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 40px auto;
 }
 
-.contactInputs {
+.contactFormInputs {
   flex-wrap: wrap;
 }
-.contactForm input {
+.formInput {
   width: 50%;
-  margin: 20px auto;
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
 }
-
+.formInput label {
+  font-size: 1.3rem;
+}
+.formInput input {
+  margin: auto;
+  width: 200px;
+}
 .contactForm textarea {
   margin-bottom: 40px;
 }
-
+.submitBtn {
+  border: 2px solid rgb(20, 20, 20);
+  background: rgb(247, 202, 15);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 202, 15, 1) 0%,
+    rgba(122, 200, 99, 1) 100%
+  );
+}
+.contactDetails {
+  width: 100%;
+  padding-top: 12px;
+}
 .contactDetails h2 {
   font-size: 1.2rem;
   margin: 20px auto 40px;
