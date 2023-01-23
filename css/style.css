@@ -7,6 +7,9 @@ body {
 .flexor {
   display: flex;
 }
+.B {
+  font-weight: bold;
+}
 /* Header Section */
 .navigation {
   background-color: white;
@@ -99,16 +102,27 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 10px -4px;
 }
 .product {
   max-width: 260px;
   margin: 30px;
+  text-align: center;
+  padding: 4px;
+  border: 1px solid black;
 }
 .productName {
   text-align: center;
 }
 .productIMG {
-  max-width: 260px;
+  max-width: 250px;
+}
+.productBtn {
+  width: 65px;
+  border-radius: 8px;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  margin-bottom: 8px;
 }
 
 /* Contact.html Styles */
@@ -175,10 +189,12 @@ a {
   );
 }
 .contactDetails {
-  width: 100%;
-  padding-top: 12px;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+  padding: 16px;
 }
 .contactDetails h2 {
   font-size: 1.2rem;
-  margin: 20px auto 40px;
+  margin: 16px auto;
 }
