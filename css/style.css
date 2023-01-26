@@ -36,6 +36,12 @@ a {
   color: black;
   font-weight: bold;
 }
+a:hover {
+  color: rgb(122, 200, 99);
+}
+.active {
+  text-decoration: underline;
+}
 .insta {
   max-height: 22px;
 }
@@ -178,6 +184,9 @@ a {
 }
 .contactForm textarea {
   margin-bottom: 40px;
+}
+.divSubmitBtn {
+  max-width: 240px;
 }
 .submitBtn {
   border: 2px solid rgb(20, 20, 20);
