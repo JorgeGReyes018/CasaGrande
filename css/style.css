@@ -95,6 +95,12 @@ a:hover {
   width: 100%;
   display: flex;
 }
+.logos button {
+  border: none;
+  display: flex;
+  margin: auto;
+  background-color: transparent;
+}
 .logos img {
   max-height: 160px;
   justify-content: space-between;
@@ -119,9 +125,11 @@ a:hover {
 }
 .productName {
   text-align: center;
+  font-size: 1.8rem;
 }
 .productIMG {
   max-width: 250px;
+  max-height: 250px;
 }
 .productBtn {
   width: 65px;
