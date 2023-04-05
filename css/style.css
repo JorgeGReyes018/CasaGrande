@@ -45,6 +45,16 @@ a:hover {
 .insta {
   max-height: 22px;
 }
+/* Footer */
+footer {
+  height: 100px;
+  background-color: white;
+  box-shadow: rgba(230, 230, 230, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+footer a {
+  margin: auto;
+}
 /* Showcase Section */
 
 .right {
@@ -117,7 +127,7 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 10px -4px;
 }
 .product {
-  max-width: 260px;
+  width: 260px;
   margin: 30px;
   text-align: center;
   padding: 4px;
@@ -128,8 +138,8 @@ a:hover {
   font-size: 1.8rem;
 }
 .productIMG {
-  max-width: 250px;
-  max-height: 250px;
+  width: 250px;
+  height: 250px;
 }
 .productBtn {
   width: 65px;
