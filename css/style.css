@@ -10,6 +10,7 @@ body {
 .B {
   font-weight: bold;
 }
+
 /* Header Section */
 .navigation {
   background-color: white;
@@ -105,7 +106,7 @@ footer a {
   width: 100%;
   display: flex;
 }
-.logos button {
+.logoBtn {
   border: none;
   display: flex;
   margin: auto;
@@ -117,6 +118,14 @@ footer a {
   padding: 30px;
   margin: auto;
 }
+.logoBtn:hover {
+  background-color: #ddd;
+}
+.logoBtn.active {
+  background-color: #666;
+  color: white;
+}
+
 /* Products Section */
 .products {
   background-color: white;
@@ -132,6 +141,10 @@ footer a {
   text-align: center;
   padding: 4px;
   border: 1px solid black;
+  display: none;
+}
+.show {
+  display: block;
 }
 .productName {
   text-align: center;
