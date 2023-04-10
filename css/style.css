@@ -145,6 +145,10 @@ footer a {
   text-align: center;
   font-size: 1.8rem;
 }
+.productSub {
+  text-align: center;
+  font-size: 1.1rem;
+}
 .productIMG {
   width: 250px;
   height: 250px;
