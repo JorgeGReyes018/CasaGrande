@@ -121,11 +121,6 @@ footer a {
 .logoBtn:hover {
   background-color: #ddd;
 }
-.logoBtn.active {
-  background-color: #666;
-  color: white;
-}
-
 /* Products Section */
 .products {
   background-color: white;
