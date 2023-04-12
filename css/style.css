@@ -149,6 +149,15 @@ footer a {
   text-align: center;
   font-size: 1.1rem;
 }
+.productDetails {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  font-size: 0.8rem;
+}
+.UPC {
+  font-size: 0.76rem;
+}
 .productIMG {
   width: 250px;
   height: 250px;
