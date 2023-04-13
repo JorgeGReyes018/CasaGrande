@@ -34,3 +34,26 @@ function removeClass(el, name) {
   }
   el.className = arr1.join(" ");
 }
+
+function searchFilter() {
+  var input, filter, allProducts, pr, pd, i, txtValue;
+  input = document.getElementsByClassName("input");
+  filter = input.value.toUpperCase();
+  allProducts = document.getElementsByClassName("products");
+  pr = allProducts.getElementsByClassName("product");
+
+  // Loop through all allProducts rows, and hide those who don't match the search query
+  for (i = 0; i < pr.length; i++) {
+    pd = pr[i].getElementsByTagName("pd")[0];
+    if (pd) {
+      txtValue = pd.textContent || pd.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        pr[i].style.display = "";
+      } else {
+        pr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+// <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
