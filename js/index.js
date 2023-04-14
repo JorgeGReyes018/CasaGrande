@@ -1,59 +1,131 @@
-filterSelection("all");
+//Filter products by logo button
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("product");
   if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     removeClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
   }
 }
 
-// Show filtered elements
-function addClass(el, name) {
+//Add class to element
+function addClass(element, name) {
   var i, arr1, arr2;
-  arr1 = el.className.split(" ");
+  arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     if (arr1.indexOf(arr2[i]) == -1) {
-      el.className += " " + arr2[i];
+      element.className += " " + arr2[i];
     }
   }
 }
 
-// Hide elements that are not selected
-function removeClass(el, name) {
+//Remove class from element
+function removeClass(element, name) {
   var i, arr1, arr2;
-  arr1 = el.className.split(" ");
+  arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
       arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
-  el.className = arr1.join(" ");
+  element.className = arr1.join(" ");
 }
 
-function searchFilter() {
-  var input, filter, allProducts, pr, pd, i, txtValue;
-  input = document.getElementsByClassName("input");
+//Filter products by search input
+function searchProducts() {
+  var input, filter, container, products, productName, i;
+  input = document.getElementById("searchInput");
   filter = input.value.toUpperCase();
-  allProducts = document.getElementsByClassName("products");
-  pr = allProducts.getElementsByClassName("product");
-
-  // Loop through all allProducts rows, and hide those who don't match the search query
-  for (i = 0; i < pr.length; i++) {
-    pd = pr[i].getElementsByTagName("pd")[0];
-    if (pd) {
-      txtValue = pd.textContent || pd.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        pr[i].style.display = "";
-      } else {
-        pr[i].style.display = "none";
-      }
+  container = document.getElementsByClassName("container")[0];
+  products = container.getElementsByClassName("product");
+  for (i = 0; i < products.length; i++) {
+    productName = products[i].getElementsByClassName("productName")[0];
+    if (productName.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      products[i].style.display = "";
+    } else {
+      products[i].style.display = "none";
     }
   }
 }
 
-// <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+// Clear search input and its actions
+function clearSearch() {
+  var input = document.getElementById("searchInput");
+  input.value = "";
+  searchProducts();
+  filterSelection("all"); // add this line to make all products active or displayed
+}
+
+//Show all products on page load
+filterSelection("all");
+
+//Add event listener to logo buttons
+var logoBtns = document.getElementsByClassName("logoBtn");
+for (var i = 0; i < logoBtns.length; i++) {
+  logoBtns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+//Add event listener to search input
+var searchInput = document.getElementById("searchInput");
+searchInput.addEventListener("keyup", searchProducts);
+
+//Add event listener to clear button
+var clearBtn = document.getElementById("clearBtn");
+clearBtn.addEventListener("click", clearSearch);
+
+// filterSelection("all");
+
+// function filterSelection(c) {
+//   var x, i;
+//   x = document.getElementsByClassName("product");
+//   if (c == "all") c = "";
+//   for (i = 0; i < x.length; i++) {
+//     removeClass(x[i], "show");
+//     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+//   }
+// }
+
+// function addClass(el, name) {
+//   var i, arr1, arr2;
+//   arr1 = el.className.split(" ");
+//   arr2 = name.split(" ");
+//   for (i = 0; i < arr2.length; i++) {
+//     if (arr1.indexOf(arr2[i]) == -1) {
+//       el.className += " " + arr2[i];
+//     }
+//   }
+// }
+
+// function removeClass(el, name) {
+//   var i, arr1, arr2;
+//   arr1 = el.className.split(" ");
+//   arr2 = name.split(" ");
+//   for (i = 0; i < arr2.length; i++) {
+//     while (arr1.indexOf(arr2[i]) > -1) {
+//       arr1.splice(arr1.indexOf(arr2[i]), 1);
+//     }
+//   }
+//   el.className = arr1.join(" ");
+// }
+
+// let searchInput = document.getElementById("searchInput");
+// searchInput.addEventListener("input", () => {
+//   let query = searchInput.value.toLowerCase();
+//   let products = document.querySelectorAll(".product");
+//   products.forEach((product) => {
+//     let productName = product.querySelector(".productName");
+//     let productNameText = productName.textContent.toLowerCase();
+//     if (productNameText.includes(query)) {
+//       product.style.display = "block";
+//     } else {
+//       product.style.display = "none";
+//     }
+//   });
+// });
