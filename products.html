@@ -63,31 +63,32 @@
       </h2>
     </div>
     <div class="logos">
-      <button class="logoBtn" onclick="filterSelection('MO')"><img src="images/transparent/Molienda.png"
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('MO')"><img src="images/transparent/Molienda.png"
           alt="La Molienda Logo" /></button>
-      <button class=" logoBtn" onclick="filterSelection('AV')"><img src="images/transparent/Avelina.png"
+      <button class=" logoBtn" onclick="clearSearch(), filterSelection('AV')"><img src="images/transparent/Avelina.png"
           alt="Avelina Logo" /></button>
-      <button class="logoBtn" onclick="filterSelection('NA')"><img src="images/transparent/nane.png"
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('NA')"><img src="images/transparent/nane.png"
           alt="Nane Logo" /></button>
-      <button class="logoBtn" onclick="filterSelection('KM')"><img src="images/transparent/kidsmania.png"
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('KM')"><img src="images/transparent/kidsmania.png"
           alt="Kids Mania Logo" /></button>
-      <button class="logoBtn" onclick="filterSelection('EF')"><img src="images/transparent/efrutti.png"
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('EF')"><img src="images/transparent/efrutti.png"
           alt="EFrutti Logo" /></button>
-      <button class="logoBtn" onclick="filterSelection('SA')"><img src="images/transparent/samai.png"
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('SA')"><img src="images/transparent/samai.png"
           alt="Samai Logo" /></button>
-      <button class="logoBtn" onclick="filterSelection('product')"><img class="logo" src="images/transparent/Logo.png"
-          alt="Casa Grande Logo" /></button>
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('product')"><img class="logo"
+          src="images/transparent/Logo.png" alt="Casa Grande Logo" /></button>
     </div>
   </div>
   <!-- Companies End -->
   <!-- Search Filter Start -->
-  <div class="searchBox"><input type="text" id="searchInput" placeholder="Search"><button id="clearBtn">Reset</button>
+  <div class="searchBox"><input type="text" id="searchInput" onclick="filterSelection('product')"
+      placeholder="Search"><button id="clearBtn">Reset</button>
   </div>
   <!-- Search Filter End -->
   <!-- 
     <div id="#" class="product #">
       <h1 class="productName">#</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="#" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
@@ -98,410 +99,891 @@
     <div id="001" class="product">
       <h1 class="productName">Caballo Negro</h1>
       <h1 class="productSub">Energy Drink</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Other/caballo16oz.jpg" alt="" />
       <h3 class="UPC">UPC:</h3>
-      <h1 class="productSub">Energy Drink</h1>
-      <h1 class="productSub">Energy Drink</h1>
     </div>
     <div id="002" class="product">
       <h1 class="productName">Pichirilo</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Other/2879E108-D49F-4BA4-B6FD-FADFEC050DC7.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="003" class="product">
       <h1 class="productName">Nuclear Fusion</h1>
       <h1 class="productSub">Sour Candy</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Other/D79E796C-9D95-4DA5-9F51-6DAE715D38C3.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="004" class="product">
       <h1 class="productName">Cocada Horneada</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Other/34F0EF75-16DA-49D2-8A63-7C5087CA9624.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="005" class="product">
       <h1 class="productName">Sweet Potato</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Other/2E724888-2960-4C7F-9FE6-C0B1CC9B4349.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
+    <div id="006" class="product">
+      <h1 class="productName">Assorted Fruits</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Other/006.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="007" class="product">
+      <h1 class="productName">Sweet Potato</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Other/007.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="008" class="product">
+      <h1 class="productName">Pecan Pastry</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Other/008.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="009" class="product">
+      <h1 class="productName">Tama Vaso</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Other/009.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="010" class="product">
+      <h1 class="productName">Tamarinleta</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Other/010.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="011" class="product">
+      <h1 class="productName">Choco Egg Treasure</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Other/011.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="013" class="product">
+      <h1 class="productName">Choco Cone Treasure</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Other/013.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
     <!-- MO -->
+    <div id="MO000" class="product MO">
+      <h1 class="productName">Mixed Pack #1</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO000.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
     <div id="MO001" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Mixed Pack #2</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO001.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO002" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Mixed Fruit bars</h1>
+      <h1 class="productSub">Assorted Flavors</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO002.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO003" class="product MO">
       <h1 class="productName">Mix Nut Bar</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
-      <img class="productIMG" src="images/Molienda/MO002.JPG" alt="" />
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO003.jpeg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO004" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Ollitas</h1>
+      <h1 class="productSub">Assorted Flavors</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO004.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO005" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Mango Candy</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO005.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO006" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Chamoy Candy</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO006.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO007" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Animal Crackers</h1>
+      <h1 class="productSub">Galletas</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO007.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO008" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Iced Cookies</h1>
+      <h1 class="productSub">Galletas</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO008.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO009" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Sprinkled Cookies</h1>
+      <h1 class="productSub">Galletas</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO009.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO010" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Hojarascas</h1>
+      <h1 class="productSub">Coconut Cookies</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO010.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO011" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Cookies</h1>
+      <h1 class="productSub">Galletas</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO011.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO012" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Milk Candy Wafers</h1>
+      <h1 class="productSub">Pack</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO012.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
+    <div id="MO018" class="product MO">
+      <h1 class="productName">Milk Candy Wafers</h1>
+      <h1 class="productSub">Individual</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO018.JPG" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
     <div id="MO013" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Orejas</h1>
+      <h1 class="productSub">Mexican Pastry</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO013.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO014" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Mixed pack #3</h1>
+      <h1 class="productSub">Assorted Cookies & Pastries</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO014.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="MO015" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h1 class="productName">Mango Pulp</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO015.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
-    <div id="MO16" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+    <div id="MO016" class="product MO">
+      <h1 class="productName">Honey</h1>
+      <h1 class="productSub">Corn Syrup Blend</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO016.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
-    <div id="MO17" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
+    <div id="MO017" class="product MO">
+      <h1 class="productName">Goat Milk Candy</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Molienda/MO017.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
+    <div id="MO019" class="product MO">
+      <h1 class="productName">Peanut Caramel</h1>
+      <h1 class="productSub">Jumbo Size</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO019.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO020" class="product MO">
+      <h1 class="productName">Assorted Paketon</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO020.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO021" class="product MO">
+      <h1 class="productName">Spicy Hot Chips</h1>
+      <h1 class="productSub">Potato Chips</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO021.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO022" class="product MO">
+      <h1 class="productName">Cheese & Jalapeno Chips</h1>
+      <h1 class="productSub">Potato Chips</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO022.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO023" class="product MO">
+      <h1 class="productName">Salted Chips</h1>
+      <h1 class="productSub">Potato Chips</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO023.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO024" class="product MO">
+      <h1 class="productName">Chili Ranchitos</h1>
+      <h1 class="productSub">Corn Snack</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO024.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO025" class="product MO">
+      <h1 class="productName">Salted Ranchitos</h1>
+      <h1 class="productSub">Corn Snack</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO025.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO026" class="product MO">
+      <h1 class="productName">Mix Nut Patty</h1>
+      <h1 class="productSub">Comalitos</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO026.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO027" class="product MO">
+      <h1 class="productName">Peanut Patty</h1>
+      <h1 class="productSub">Comalitos</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO027.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO028" class="product MO">
+      <h1 class="productName">Pecan Patty</h1>
+      <h1 class="productSub">Comalitos</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO028.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO029" class="product MO">
+      <h1 class="productName">Coconut Patty</h1>
+      <h1 class="productSub">Comalitos</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO029.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO030" class="product MO">
+      <h1 class="productName">Amaranth Patty</h1>
+      <h1 class="productSub">Comalitos</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO030.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO031" class="product MO">
+      <h1 class="productName">Sesame Seed Patty</h1>
+      <h1 class="productSub">Comalitos</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO031.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO032" class="product MO">
+      <h1 class="productName">Granola</h1>
+      <h1 class="productSub">Pecan,Coconut,Peanut,Almond</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO032.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
     <div id="MO18" class="product MO">
-      <h1 class="productName">LABEL</h1>
-      <h1 class="productSub">SUBNAME</h1>
-      <h3 class="QTY">8-Count</h3>
-      <img class="productIMG" src="images/Molienda/MO018.JPG" alt="" />
+      <h1 class="productName">Gorditas</h1>
+      <h1 class="productSub">Pastry</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO033.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO18" class="product MO">
+      <h1 class="productName">Caramel Filled Pie</h1>
+      <h1 class="productSub">Empanada</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO034.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO18" class="product MO">
+      <h1 class="productName">Pineapple Filled Pie</h1>
+      <h1 class="productSub">Empanada</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO035.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO18" class="product MO">
+      <h1 class="productName">Cinnamon Cookies</h1>
+      <h1 class="productSub">Galletas</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO036.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO18" class="product MO">
+      <h1 class="productName">Mexican Pastry</h1>
+      <h1 class="productSub">Campechana</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO037.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO18" class="product MO">
+      <h1 class="productName">Quince Paste</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO038.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="MO18" class="product MO">
+      <h1 class="productName">Assorted fruit</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/Molienda/MO039.jpeg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <!-- AV -->
     <div id="4706" class="product AV">
       <h1 class="productName">Honey & Almonds</h1>
       <h1 class="productSub">Granola</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">12.3 OZ</h3>
       <img class="productIMG" src="images/Avelina/IMG_4706.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4707" class="product AV">
       <h1 class="productName">Honey & Raisins</h1>
       <h1 class="productSub">Granola</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">12.3 OZ</h3>
       <img class="productIMG" src="images/Avelina/IMG_4707.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4708" class="product AV">
       <h1 class="productName">Oatmeal</h1>
       <h1 class="productSub">Pancake/Waffle Mix</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">12.3 OZ</h3>
       <img class="productIMG" src="images/Avelina/IMG_4708.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4709" class="product AV">
       <h1 class="productName">Cinnamon</h1>
       <h1 class="productSub">Oatmeal</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">12.3 OZ</h3>
       <img class="productIMG" src="images/Avelina/IMG_4709.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4710" class="product AV">
       <h1 class="productName">Coconut</h1>
       <h1 class="productSub">Oatmeal</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">12.3 OZ</h3>
       <img class="productIMG" src="images/Avelina/IMG_4710.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4711" class="product AV">
       <h1 class="productName">Multi Seeds</h1>
       <h1 class="productSub">Oatmeal</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">12.3 OZ</h3>
       <img class="productIMG" src="images/Avelina/IMG_4711.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4712" class="product AV">
       <h1 class="productName">Raisins & Almonds</h1>
       <h1 class="productSub">Oatmeal</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">12.3 OZ</h3>
       <img class="productIMG" src="images/Avelina/IMG_4712.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4713" class="product AV">
       <h1 class="productName">Quick Cooking</h1>
       <h1 class="productSub">Rolled Oats</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">12.3 OZ</h3>
       <img class="productIMG" src="images/Avelina/IMG_4713.JPG" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="4716" class="product AV">
+      <h1 class="productName">Quick Cooking</h1>
+      <h1 class="productSub">Rolled Oats</h1>
+      <h3 class="QTY">16 OZ</h3>
+      <img class="productIMG" src="images/Avelina/IMG_4716.jpeg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4714" class="product AV">
       <h1 class="productName">Old Fashioned</h1>
       <h1 class="productSub">Rolled Oats</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">12.3 OZ</h3>
       <img class="productIMG" src="images/Avelina/IMG_4714.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
+    <div id="4715" class="product AV">
+      <h1 class="productName">Old Fashioned</h1>
+      <h1 class="productSub">Rolled Oats</h1>
+      <h3 class="QTY">16 OZ</h3>
+      <img class="productIMG" src="images/Avelina/IMG_4715.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+
     <!-- NA -->
     <div id="NA001" class="product NA">
       <h1 class="productName">Carnitas</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Nane/Carnitas.png" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="NA002" class="product NA">
       <h1 class="productName">Chicharron</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Nane/Chicharron.png" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="NA003" class="product NA">
       <h1 class="productName">Cochina</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Nane/Cochina.png" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="NA004" class="product NA">
       <h1 class="productName">Frijoles</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Nane/Frijoles.png" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="NA005" class="product NA">
       <h1 class="productName">Picadillo</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Nane/Picadillo.png" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <!-- KM -->
     <div id="1649" class="product KM">
       <h1 class="productName">Gator Chomp</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/KidsMania/IMG_1646.jpg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="2460" class="product KM">
       <h1 class="productName">Shark Bite</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/KidsMania/IMG_2460.jpg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="2463" class="product KM">
       <h1 class="productName">Wacky Monkey</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/KidsMania/IMG_2463.jpg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="2464" class="product KM">
       <h1 class="productName">Punchy Monkey</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/KidsMania/IMG_2464.jpg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="2465" class="product KM">
       <h1 class="productName">Sour Flush</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/KidsMania/IMG_2465.jpg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="2468" class="product KM">
       <h1 class="productName">Monkey Swing</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/KidsMania/IMG_2468.jpg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="2473" class="product KM">
       <h1 class="productName">Fancy Henny</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/KidsMania/IMG_2473.jpg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="2476" class="product KM">
       <h1 class="productName">Wiggle Pop</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/KidsMania/IMG_2476.jpg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM001" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM001.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM002" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM002.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM003" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM003.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM004" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM004.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM005" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM005.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM006" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM006.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM007" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM007.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM008" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM008.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM009" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM009.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM010" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM010.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM011" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM011.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM012" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM012.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM013" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM013.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM014" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM014.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM015" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM015.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM016" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM016.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM017" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM017.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM018" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM018.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM019" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM019.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM020" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM020.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM021" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM021.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM022" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM022.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM023" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM023.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM024" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM024.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM025" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM025.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM026" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM026.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM027" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM027.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM028" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM028.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM029" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM029.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM030" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM030.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM031" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM031.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM032" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM032.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM033" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM033.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM034" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM034.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM035" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM035.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM036" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM036.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM037" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM037.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM038" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM038.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM039" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM039.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM040" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM040.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM041" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM041.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="KM042" class="product KM">
+      <h1 class="productName">DDD</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/KidsMania/KM042.jpeg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <!-- EF -->
     <div id="EF001" class="product EF">
       <h1 class="productName">Lunch Bag</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/EFrutti/lunchbag.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="EF002" class="product EF">
       <h1 class="productName">Pizza Gummy</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/EFrutti/pizza.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="EF003" class="product EF">
       <h1 class="productName">Hot Dog Gummy</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/EFrutti/hotdog.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="EF004" class="product EF">
       <h1 class="productName">Sour Burger Gummy</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/EFrutti/sourburger.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="EF005" class="product EF">
       <h1 class="productName">Sour Fries Gummy</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/EFrutti/fries.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="EF006" class="product EF">
       <h1 class="productName">Burger Gummy</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/EFrutti/burger.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="EF007" class="product EF">
       <h1 class="productName">Watermelon Gummy</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/EFrutti/watermelon.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="EF08" class="product EF">
       <h1 class="productName">Strawberry Gummy</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/EFrutti/strawberry.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="EF09" class="product EF">
       <h1 class="productName">Bunch of Bananas</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/EFrutti/bananas.JPG" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="EF10" class="product EF">
+      <h1 class="productName">Mixed EFrutti #1</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/EFrutti/EF001.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="EF10" class="product EF">
+      <h1 class="productName">Mixed EFrutti #2</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/EFrutti/EF002.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="EF10" class="product EF">
+      <h1 class="productName">Mixed EFrutti #3</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/EFrutti/EF003.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="EF10" class="product EF">
+      <h1 class="productName">Mixed EFrutti #4</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/EFrutti/EF004.jpeg" alt="" />
+      <h3 class="UPC">UPC:</h3>
+    </div>
+    <div id="EF10" class="product EF">
+      <h1 class="productName">Mixed EFrutti #5</h1>
+      <h3 class="QTY">Quantity</h3>
+      <img class="productIMG" src="images/EFrutti/EF005.jpeg" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <!-- SM -->
     <div id="4674" class="product SA">
       <h1 class="productName">Sea Salt</h1>
       <h1 class="productSub">Plantain Chips</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Samai/IMG_4674.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4675" class="product SA">
       <h1 class="productName">Sea Salt</h1>
       <h1 class="productSub">Veggie Chips</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Samai/IMG_4675.PNG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4676" class="product SA">
       <h1 class="productName">Pacific Sea Salt</h1>
       <h1 class="productSub">Plantain Chips</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Samai/IMG_4676.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4677" class="product SA">
       <h1 class="productName">Naturally Sweet</h1>
       <h1 class="productSub">Plantain Chips</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Samai/IMG_4677.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4678" class="product SA">
       <h1 class="productName">Lime</h1>
       <h1 class="productSub">Plantain Chips</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Samai/IMG_4678.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4679" class="product SA">
       <h1 class="productName">Jungle Chili</h1>
       <h1 class="productSub">Plantain Chips</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Samai/IMG_4679.JPG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
     <div id="4680" class="product SA">
       <h1 class="productName">Sea Salt</h1>
       <h1 class="productSub">Artisan Strips</h1>
-      <h3 class="QTY">8-Count</h3>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="images/Samai/IMG_4680.PNG" alt="" />
       <h3 class="UPC">UPC:</h3>
     </div>
@@ -516,7 +998,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
     crossorigin="anonymous"></script>
-  <script src="js/test.js"></script>
+  <script src="js/index.js"></script>
 </body>
 <!--  -->
 
