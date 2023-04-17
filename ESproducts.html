@@ -61,27 +61,34 @@
       </h2>
     </div>
     <div class="logos">
-      <button class="logoBtn" onclick="filterSelection('MO')"><img src="images/transparent/Molienda.png"
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('MO')"><img src="images/transparent/Molienda.png"
           alt="La Molienda Logo" /></button>
-      <button class=" logoBtn" onclick="filterSelection('AV')"><img src="images/transparent/Avelina.png"
+      <button class=" logoBtn" onclick="clearSearch(), filterSelection('AV')"><img src="images/transparent/Avelina.png"
           alt="Avelina Logo" /></button>
-      <button class="logoBtn" onclick="filterSelection('NA')"><img src="images/transparent/nane.png"
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('NA')"><img src="images/transparent/nane.png"
           alt="Nane Logo" /></button>
-      <button class="logoBtn" onclick="filterSelection('KM')"><img src="images/transparent/kidsmania.png"
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('KM')"><img src="images/transparent/kidsmania.png"
           alt="Kids Mania Logo" /></button>
-      <button class="logoBtn" onclick="filterSelection('EF')"><img src="images/transparent/efrutti.png"
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('EF')"><img src="images/transparent/efrutti.png"
           alt="EFrutti Logo" /></button>
-      <button class="logoBtn" onclick="filterSelection('SA')"><img src="images/transparent/samai.png"
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('SA')"><img src="images/transparent/samai.png"
           alt="Samai Logo" /></button>
-      <button class="logoBtn" onclick="filterSelection('product')"><img class="logo" src="images/transparent/Logo.png"
-          alt="Casa Grande Logo" /></button>
+      <button class="logoBtn" onclick="clearSearch(), filterSelection('product')"><img class="logo"
+          src="images/transparent/Logo.png" alt="Casa Grande Logo" /></button>
     </div>
   </div>
   <!-- Companies End -->
+  <!-- Search Filter Start -->
+  <div class="searchBox"><input type="text" id="searchInput" onclick="filterSelection('product')"
+      placeholder="Buscar"><button id="clearBtn">Reset</button>
+  </div>
+  <!-- Search Filter End -->
   <!-- 
     <div id="#" class="product #">
       <h1 class="productName">#</h1>
+      <h3 class="QTY">Quantity</h3>
       <img class="productIMG" src="#" alt="" />
+      <h3 class="UPC">UPC:</h3>
     </div>
    -->
   <!-- Products Start -->
