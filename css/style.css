@@ -189,7 +189,36 @@ footer a {
   color: white;
   margin-bottom: 8px;
 }
-
+/* About.html Styles */
+.banner {
+  background-color: lightgray;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 10px -4px;
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  padding: 38px;
+}
+.banner h1 {
+  text-decoration: underline;
+}
+.bannerText {
+  margin: auto 200px;
+  padding-top: 16px;
+  font-size: 1.1rem;
+  font-weight: 150;
+}
+.rows {
+  display: flex;
+  width: 100%;
+  padding: 80px;
+  flex-direction: row;
+}
+.rows div {
+  width: 48%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
 /* Contact.html Styles */
 .contactBody {
   background-color: rgb(200, 200, 200);
