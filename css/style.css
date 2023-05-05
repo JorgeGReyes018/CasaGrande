@@ -86,7 +86,7 @@ footer a {
 .introduction {
   margin: 40px auto;
 }
-.introduction h2 {
+.introHeading {
   text-align: center;
   font-size: 2.6rem;
   font-family: "Bebas Neue", cursive;
@@ -294,4 +294,63 @@ footer a {
 .contactDetails h2 {
   font-size: 1.2rem;
   margin: 16px auto;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1800px) {
+  .carousel-inner {
+    width: 86%;
+    margin: auto;
+  }
+  .logoBtn,
+  .logoBtn img {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .logoBtn img {
+    padding: 10px;
+  }
+  #searchInput {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .introHeading {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .introHeading {
+    font-size: 2rem;
+  }
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logoBtn {
+    max-width: 176px;
+  }
+  #searchInput {
+    width: 36%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .introHeading {
+    font-size: 1.6rem;
+  }
+  .logoBtn {
+    max-width: 140px;
+  }
+  .product {
+    width: 38%;
+  }
+  .productIMG {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #searchInput {
+    width: 42%;
+  }
 }
