@@ -56,7 +56,7 @@ function clearSearch() {
   var input = document.getElementById("searchInput");
   input.value = "";
   searchProducts();
-  filterSelection("all"); // add this line to make all products active or displayed
+  filterSelection("all"); // add this line to make all products live or displayed
 }
 
 //Show all products on page load
@@ -66,9 +66,9 @@ filterSelection("all");
 var logoBtns = document.getElementsByClassName("logoBtn");
 for (var i = 0; i < logoBtns.length; i++) {
   logoBtns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("live");
+    current[0].className = current[0].className.replace(" live", "");
+    this.className += " live";
   });
 }
 

@@ -21,6 +21,44 @@ body {
 .logo {
   margin-left: 40px;
 }
+nav {
+  background-color: white;
+  display: flex;
+  width: 100%;
+}
+.navbar-nav {
+  margin-right: 20px;
+}
+#navbarNavDropdown {
+  margin-left: auto;
+  flex-direction: row-reverse;
+}
+.nav-link {
+  color: Black;
+  font-weight: 500;
+}
+.dropdown-menu {
+  background-color: white;
+}
+.dropdown-item {
+  color: black;
+}
+nav li {
+  display: inline;
+  font-size: 18px;
+  margin: 20px;
+}
+nav li a {
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: rgb(61, 174, 72);
+  text-decoration: underline;
+}
+.navbar-toggler-icon {
+  width: 1em;
+  height: 1.5em;
+}
 .links {
   margin: auto 40px;
 }
@@ -45,15 +83,20 @@ a:hover {
 }
 .insta {
   max-height: 22px;
+  padding-right: 10px;
 }
 /* Footer */
 footer {
   height: 100px;
+  padding-top: 20px;
+  margin-bottom: 20px;
   background-color: white;
+  flex-direction: column;
   box-shadow: rgba(230, 230, 230, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 footer a {
+  display: block;
   margin: auto;
 }
 /* Showcase Section */
@@ -332,6 +375,12 @@ footer a {
   }
   #searchInput {
     width: 36%;
+  }
+  .instaLink {
+    display: none;
+  }
+  .insta {
+    padding-right: 0;
   }
 }
 @media only screen and (max-width: 768px) {
