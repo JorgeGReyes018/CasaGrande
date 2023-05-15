@@ -1,3 +1,8 @@
+// Load La Molienda as initial Filter
+window.onload = function () {
+  filterSelection("MO");
+};
+
 //Filter products by logo button
 function filterSelection(c) {
   var x, i;
@@ -79,53 +84,3 @@ searchInput.addEventListener("keyup", searchProducts);
 //Add event listener to clear button
 var clearBtn = document.getElementById("clearBtn");
 clearBtn.addEventListener("click", clearSearch);
-
-// filterSelection("all");
-
-// function filterSelection(c) {
-//   var x, i;
-//   x = document.getElementsByClassName("product");
-//   if (c == "all") c = "";
-//   for (i = 0; i < x.length; i++) {
-//     removeClass(x[i], "show");
-//     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-//   }
-// }
-
-// function addClass(el, name) {
-//   var i, arr1, arr2;
-//   arr1 = el.className.split(" ");
-//   arr2 = name.split(" ");
-//   for (i = 0; i < arr2.length; i++) {
-//     if (arr1.indexOf(arr2[i]) == -1) {
-//       el.className += " " + arr2[i];
-//     }
-//   }
-// }
-
-// function removeClass(el, name) {
-//   var i, arr1, arr2;
-//   arr1 = el.className.split(" ");
-//   arr2 = name.split(" ");
-//   for (i = 0; i < arr2.length; i++) {
-//     while (arr1.indexOf(arr2[i]) > -1) {
-//       arr1.splice(arr1.indexOf(arr2[i]), 1);
-//     }
-//   }
-//   el.className = arr1.join(" ");
-// }
-
-// let searchInput = document.getElementById("searchInput");
-// searchInput.addEventListener("input", () => {
-//   let query = searchInput.value.toLowerCase();
-//   let products = document.querySelectorAll(".product");
-//   products.forEach((product) => {
-//     let productName = product.querySelector(".productName");
-//     let productNameText = productName.textContent.toLowerCase();
-//     if (productNameText.includes(query)) {
-//       product.style.display = "block";
-//     } else {
-//       product.style.display = "none";
-//     }
-//   });
-// });
