@@ -337,6 +337,7 @@ footer a {
 .contactDetails h2 {
   font-size: 1.2rem;
   margin: 16px auto;
+  text-align: center;
 }
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1800px) {
@@ -360,6 +361,13 @@ footer a {
 @media only screen and (max-width: 1200px) {
   .introHeading {
     font-size: 2.4rem;
+  }
+  .banner h1 {
+    margin: 0 auto;
+  }
+  .bannerText {
+    margin: auto;
+    padding-left: 60px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -396,6 +404,25 @@ footer a {
   .productIMG {
     width: 100%;
     height: auto;
+  }
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner h1 {
+    margin-bottom: 20px;
+  }
+  .bannerText {
+    padding-left: 0;
+  }
+  .rows {
+    flex-direction: column;
+  }
+  .rows div {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 60px;
   }
 }
 @media only screen and (max-width: 600px) {
