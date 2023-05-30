@@ -87,10 +87,12 @@ a:hover {
 }
 /* Footer */
 footer {
-  height: 100px;
-  padding-top: 20px;
+  height: 160px;
+  padding: 20px 0;
   margin-bottom: 20px;
   background-color: white;
+  text-align: center;
+  font-size: 1rem;
   flex-direction: column;
   box-shadow: rgba(230, 230, 230, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -99,8 +101,11 @@ footer a {
   display: block;
   margin: auto;
 }
+footer h5 {
+  margin: 16px auto;
+  font-weight: bold;
+}
 /* Showcase Section */
-
 .right {
   margin: auto;
   padding-bottom: 40px;
@@ -233,6 +238,11 @@ footer a {
   margin-bottom: 8px;
 }
 /* About.html Styles */
+.aboutUs {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding-top: 10px;
+}
 .banner {
   background-color: lightgray;
   box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 10px -4px;
@@ -249,7 +259,7 @@ footer a {
 .bannerText {
   margin: auto 200px;
   padding-top: 16px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 150;
 }
 .rows {
@@ -264,30 +274,37 @@ footer a {
   display: flex;
   flex-direction: column;
 }
-.rows h2 {
+.VM {
+  padding-top: 36px;
+  font-size: 1.2rem;
+}
+.VM h2 {
   text-decoration: underline;
   margin-bottom: 10px;
+  font-size: 2.1rem;
 }
 .aboutbannerdiv {
   display: flex;
-  margin-top: 60px;
+  margin: 30px auto 40px;
 }
 .aboutbanner {
   width: 86%;
   margin: auto;
 }
+.displayIMG {
+  height: 500px;
+  object-fit: contain;
+}
 /* Contact.html Styles */
 .contactBody {
   background-color: rgb(200, 200, 200);
 }
-
 .contactUs {
   margin: 30px auto;
   padding: 0;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-
 .contactHeading {
   width: 60%;
   margin: auto;
@@ -310,7 +327,6 @@ footer a {
   flex-direction: column;
   margin: 40px auto;
 }
-
 .contactFormInputs {
   flex-wrap: wrap;
 }
